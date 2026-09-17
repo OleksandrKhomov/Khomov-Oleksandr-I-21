@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<div class="Title">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація на спортивний захід</title>
+ </div>
+    <meta name="description" content="Реєстрація на спортивний захід">
+</head>
+
+<body>
+<div class="Anketa">
+    <h1>Реєстрація на спортивний захід</h1>
+    <img src="image/football1.jpg" alt="football1" width="600" height="300">
+
+<form style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <label for="firstname">Ім'я</label>
+  <input type="text" id="firstname" name="firstname" required>
+
+  <label for="lastname">Прізвище</label>
+  <input type="text" id="lastname" name="lastname" required>
+
+  <label for="email">Електронна пошта</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Номер телефону</label>
+  <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX">
+
+  <label for="age">Вік</label>
+  <input type="number" id="age" name="age" min="1" max="120">
+
+  <label for="date">Дата участі</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="distance">Дистанція</label>
+  <select id="distance" name="distance" required>
+    <option value="">— оберіть —</option>
+    <option value="2">2 км</option>
+    <option value="5">5 км</option>
+    <option value="10">10 км</option>
+  </select>
+
+  <fieldset>
+    <legend>Додаткові можливості</legend>
+    <input type="checkbox" id="tshirt" name="tshirt" value="yes">
+    <label for="tshirt">Отримати футболку</label>
+
+    <input type="checkbox" id="medal" name="medal" value="yes">
+    <label for="medal">Отримати медаль</label>
+
+    <input type="checkbox" id="news" name="news" value="yes">
+    <label for="news">Отримувати новини про наступні заходи</label>
+
+    <input type="checkbox" id="rating" name="rating" value="yes">
+    <label for="rating">Додати результати до загального рейтингу</label>
+  </fieldset>
+
+  <label for="category">Категорія учасника</label>
+  <select id="category" name="category" required>
+    <option value="">— оберіть —</option>
+    <option value="pupil">Учень</option>
+    <option value="student">Студент</option>
+    <option value="adult">Дорослий</option>
+    <option value="other">Інша категорія</option>
+  </select>
+
+  <label for="notes">Додаткова інформація для організаторів</label>
+  <textarea id="notes" name="notes" rows="4" maxlength="250" placeholder="Напишіть, якщо є щось важливе..."></textarea>
+
+  <button type="submit">Надіслати</button>
+</form>
+</div>
+</body>
+</html>
